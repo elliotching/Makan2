@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/m_add_food_toolbar"
         android:layout_width="match_parent"
-        app:titleTextColor="@color/m_color_white"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary" />
+        android:theme="@style/ElliotCyanAppBarWhiteText"
+        app:title="@string/m_title_label_add_food" />
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"

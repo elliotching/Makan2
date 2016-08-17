@@ -41,6 +41,7 @@ public class Makan_main extends AppCompatActivity {
 
     private static String isOpen_StringKey = "isOpen";
     public Context mContext = this;
+    public AppCompatActivity mAppCompatActivity = this;
     List<ITEM> dataList;
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerListView;
@@ -56,13 +57,11 @@ public class Makan_main extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+//        setTheme(R.style.AppThemeDark);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.makan_place_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.m_main_toolbar);
         setSupportActionBar(toolbar);
-        final Drawable upArrow = ContextCompat.getDrawable(mContext , R.drawable.abc_ic_ab_back_mtrl_am_alpha);
-        upArrow.setColorFilter(ContextCompat.getColor(mContext , R.color.m_color_white), PorterDuff.Mode.SRC_ATOP);
-        getSupportActionBar().setHomeAsUpIndicator(upArrow);
                 // Initializing
         dataList = new ArrayList<>();
         mTitle = mDrawerTitle = getTitle();
@@ -173,23 +172,18 @@ public class Makan_main extends AppCompatActivity {
                 .commit();
 
         invalidateOptionsMenu();
-//        setTitle("Edit Team");
         mDrawerLayout.closeDrawer(mDrawerListView);
 
 
     }
 
-    private void setItemChoosen(int position){
-        dataList.get(position).choosen=true;
-        for(int i=0 ; i<dataList.size() ; i++){
-
-        }
-    }
     private Fragment getNewFragmentAt(int position){
         if(position == 0){
+            setTitle(R.string.app_name);
             return new FragmentOne();
         }
         else if(position == 1){
+            setTitle(R.string.m_title_activity_maps);
             return new MapsActivity();
         }
         else{
@@ -204,9 +198,14 @@ public class Makan_main extends AppCompatActivity {
     }
 
     @Override
+    public void setTitle(int ResStringID) {
+        mTitle = mContext.getResources().getString(ResStringID);
+        mAppCompatActivity.getSupportActionBar().setTitle(mTitle);
+    }
+
     public void setTitle(CharSequence title) {
         mTitle = title;
-        getSupportActionBar().setTitle(mTitle);
+        mAppCompatActivity.getSupportActionBar().setTitle(mTitle);
     }
 
     @Override

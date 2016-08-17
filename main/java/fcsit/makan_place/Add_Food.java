@@ -17,7 +17,7 @@ public class Add_Food extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_menu_form);
         Toolbar toolbar = (Toolbar)findViewById(R.id.m_add_food_toolbar);
-        toolbar.setTitle(R.string.m_title_label_add_food);
+//        toolbar.setTitle(R.string.m_title_label_add_food);
         setSupportActionBar(toolbar);
 
 

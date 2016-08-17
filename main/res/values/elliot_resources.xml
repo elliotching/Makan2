@@ -41,7 +41,7 @@
     <string name="m_username">Username</string>
     <string name="m_password">Password</string>
     <string name="m_login">Log In</string>
-    <string name="title_activity_maps">Map</string>
+    <string name="m_title_activity_maps">Makan Place Map</string>
     <string name="m_title_label_add_food">Add Food</string>
     <string name="m_food_form_name">Food Name:</string>
     <string name="m_food_form_price">Price:</string>
@@ -82,11 +82,22 @@
         <item name="colorPrimaryDark">@color/m_color_sdark_cyan</item>
         <item name="colorAccent">@color/m_color_dark_cyan</item>
         <item name="android:textColor">@color/m_color_sdark_cyan</item>
-        <item name="drawerArrowStyle">@style/ElliotDrawerArrowStyle</item>
     </style>
 
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppThemeDark" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/m_color_dark_cyan</item>
+        <item name="colorPrimaryDark">@color/m_color_sdark_cyan</item>
+        <item name="colorAccent">@color/m_color_dark_cyan</item>
+        <item name="android:textColor">@color/m_color_sdark_cyan</item>
+    </style>
+
+
+    <style name="ElliotCyanAppBarWhiteText" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/m_color_dark_cyan</item>
+        <item name="colorControlNormal">@color/m_color_white</item>
+    </style>
 
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
