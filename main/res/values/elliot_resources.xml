@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--COLOR-->
+    <!-- color-code-light : 00ffe7 -->
+    <color name="m_color_light_cyan">#00ffe7</color>
+    <color name="m_color_dark_cyan">#009688</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="m_color_sdark_cyan">#00796b</color>
+    <color name="m_color_pale_cyan">#b2dfdb</color>
+    <!--<color name="drawer">#D0009688</color>-->
+    <!--<color name="drawer_header">#004d40</color>-->
+    <!--<color name="material_indigo">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="m_color_white">#FFFFFF</color>
+    <!--<color name="HouseNearbyGreen">#ACFD30</color>-->
+    <!--<color name="Black">#000000</color>-->
+    <!--<color name="textColor">#FFFFFF</color>-->
+
+
+
+
+
+
+
+
+
+
+<!--STRING-->
+    <string name="app_name">Makan Place</string>
+    <string name="icon_name">Makan Place</string>
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    <string name="saved_team">Saved Team</string>
+    <string name="m_checktable">check</string>
+    <string name="m_todoitem">TodoItem</string>
+    <string name="m_student">Student</string>
+
+    <string name="m_item1">Login</string>
+    <string name="m_item2_map">Map</string>
+    <string name="m_username">Username</string>
+    <string name="m_password">Password</string>
+    <string name="m_login">Log In</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="m_title_label_add_food">Add Food</string>
+    <string name="m_food_form_name">Food Name:</string>
+    <string name="m_food_form_price">Price:</string>
+    <string name="m_food_form_type">Food Type:</string>
+    <string name="m_food_form_location">Location:</string>
+
+
+
+
+
+
+
+
+
+
+<!--DIMENSION-->
+	<dimen name="marginS">16dp</dimen>
+    <dimen name="m_margin_inside_drawer">5dp</dimen>
+    <dimen name="m_list_view_item_height">50dp</dimen>
+    <dimen name="m_text_size_small">12sp</dimen>
+    <dimen name="m_text_size_medium">24sp</dimen>
+    <dimen name="m_text_size_large">48sp</dimen>
+
+
+
+
+
+
+
+
+
+
+<!--THEME AND STYLE-->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/m_color_dark_cyan</item>
+        <item name="colorPrimaryDark">@color/m_color_sdark_cyan</item>
+        <item name="colorAccent">@color/m_color_dark_cyan</item>
+        <item name="android:textColor">@color/m_color_sdark_cyan</item>
+        <item name="drawerArrowStyle">@style/ElliotDrawerArrowStyle</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+<!--To change the drawer button / up button color-->
+    <style name="ElliotDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/m_color_white</item>
+    </style>
+
+
+    <style name="ElliotColoredButton" parent="Widget.AppCompat.Button">
+        <item name="colorButtonNormal">@color/m_color_dark_cyan</item>
+        <item name="android:textColor">@color/m_color_white</item>
+    </style>
+
+
+    <style name="ElliotTitleTextColor">
+        <item name="titleTextColor">@color/m_color_white</item>
+    </style>
+
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/logo</item>
+    </style>
+
+</resources>
