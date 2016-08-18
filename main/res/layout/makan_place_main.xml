@@ -14,9 +14,8 @@
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/m_main_toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:theme="@style/ElliotCyanAppBarWhiteText"
+            style="@style/ElliotToolbarStyle"
+            android:theme="@style/ElliotAppBarWhiteText"
             app:title="@string/app_name" />
 
         <FrameLayout

@@ -7,9 +7,8 @@
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/m_add_food_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:theme="@style/ElliotCyanAppBarWhiteText"
+        style="@style/ElliotToolbarStyle"
+        android:theme="@style/ElliotAppBarWhiteText"
         app:title="@string/m_title_label_add_food" />
 
     <ScrollView

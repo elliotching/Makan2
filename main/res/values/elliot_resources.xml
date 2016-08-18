@@ -94,8 +94,14 @@
     </style>
 
 
-    <style name="ElliotCyanAppBarWhiteText" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
-        <item name="android:background">@color/m_color_dark_cyan</item>
+    <style name="ElliotToolbarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+
+    <style name="ElliotAppBarWhiteText" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
         <item name="colorControlNormal">@color/m_color_white</item>
     </style>
 
